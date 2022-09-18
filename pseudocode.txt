@@ -1,0 +1,79 @@
+Algoritma Program_Kasir
+
+STORE "n" AS INTEGER WITH 0
+STORE "m" AS INTEGER WITH 0
+STORE "j" AS INTEGER WITH 0
+STORE "T" AS INTEGER WITH 0
+STORE "TA" AS INTEGER WITH 0
+
+BEGIN
+WRITE ("Masukkan Pilihan Menu: (1)Makanan; (2)Minuman")
+READ (n)
+	if (n = 1)
+	Write ("Masukkan Kode Makanan: (01)Nasi + Sayap Ayam + Es Teh; (02)Nasi + Sayap Ayam + Es Lemon Tea; (03)Nasi + Dada Ayam + Es Lemon Tea;")
+	Read (m)
+		if (m = 01)
+		Write ("01 = PAKET CHICKEN 1 = Nasi + Sayap Ayam + Es Teh. Masukkan jumlah Paket yang dipesan: ")
+		Read (j)
+		10.000 * j <- T
+			if (T = 50.000)
+			T * 5% <- TA
+			Print (TA)
+			else if (T <= 100.000)
+			T * 10% <- TA
+			Print (TA)
+			else 
+			Print (T)
+		else if (m = 02)
+		Write ("02 = PAKET CHICKEN 1 = Nasi + Sayap Ayam + Es Lemon Tea. Masukkan jumlah Paket yang dipesan: ")
+		Read (j)
+		15.000 * j <- T
+			if (T = 50.000)
+			T * 5% <- TA
+			Print (TA)
+			else if (T <= 100.000)
+			T * 10% <- TA
+			Print (TA)
+			else 
+			Print (T)
+		else (m != 01; m != 02)
+		Write ("03 = PAKET CHICKEN 1 = Nasi + Dada Ayam + Es Lemon Tea. Masukkan jumlah Paket yang dipesan: ")
+		Read (j)
+		20.000 * j <- T
+			if (T = 50.000)
+			T * 5% <- TA
+			Print (TA)
+			else if (T <= 100.000)
+			T * 10% <- TA
+			Print (TA)
+			else 
+			Print (T)
+
+else (n != 1)
+	Write ("Masukkan Kode Makanan: (01)Es Teh; (02)Es Lemon Tea")
+	Read (m)
+		if (m = 1)
+		Write ("01 = Minuman Es Teh. Masukkan jumlah Yang Dipesan: ")
+		Read (j)
+		5.000 * j <- T
+			if (T = 50.000)
+			T * 5% <- TA
+			Print (TA)
+			else if (T <= 100.000)
+			T * 10% <- TA
+			Print (TA)
+			else 
+			Print (T)
+		else (m != 1)
+		Write ("02 = Minuman Lemon Tea. Masukkan jumlah Yang Dipesan: ")
+		Read (j)
+		8.000 * j <- T
+			if (T = 50.000)
+			T * 5% <- TA
+			Print (TA)
+			else if (T <= 100.000)
+			T * 10% <- TA
+			Print (TA)
+			else 
+			Print (T)
+END
