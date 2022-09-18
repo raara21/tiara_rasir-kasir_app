@@ -48,4 +48,31 @@ READ (n)
 			Print (TA)
 			else 
 			Print (T)
-            
+
+else (n != 1)
+	Write ("Masukkan Kode Makanan: (01)Es Teh; (02)Es Lemon Tea")
+	Read (m)
+		if (m = 1)
+		Write ("01 = Minuman Es Teh. Masukkan jumlah Yang Dipesan: ")
+		Read (j)
+		5.000 * j <- T
+			if (T = 50.000)
+			T * 5% <- TA
+			Print (TA)
+			else if (T <= 100.000)
+			T * 10% <- TA
+			Print (TA)
+			else 
+			Print (T)
+		else (m != 1)
+		Write ("02 = Minuman Lemon Tea. Masukkan jumlah Yang Dipesan: ")
+		Read (j)
+		8.000 * j <- T
+			if (T = 50.000)
+			T * 5% <- TA
+			Print (TA)
+			else if (T <= 100.000)
+			T * 10% <- TA
+			Print (TA)
+			else 
+			Print (T)
